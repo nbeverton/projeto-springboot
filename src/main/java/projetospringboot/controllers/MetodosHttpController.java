@@ -15,7 +15,7 @@ public class MetodosHttpController {
     public String post() {
         return "Requisição POST";
     }
-    
+
     @PutMapping
     public String put() {
         return "Requisição PUT";
