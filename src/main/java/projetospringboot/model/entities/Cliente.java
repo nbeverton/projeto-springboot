@@ -1,4 +1,4 @@
-package projetospringboot.models;
+package projetospringboot.model.entities;
 
 public class Cliente {
 

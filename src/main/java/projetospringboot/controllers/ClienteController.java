@@ -1,7 +1,7 @@
 package projetospringboot.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import projetospringboot.models.Cliente;
+import projetospringboot.model.entities.Cliente;
 
 @RestController
 @RequestMapping(path = "/clientes")
