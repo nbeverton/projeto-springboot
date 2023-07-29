@@ -29,6 +29,11 @@ public class ProdutoController{
         return produtoRepository.findAll();
     }
 
+    @GetMapping(path = "/nome/{parteNome}")
+    public Iterable<Produto> obterProdutoPorNome(@PathVariable String parteNome){
+        return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
+    }
+
     @GetMapping(path = "/pagina/{numeroPagina}")
     public Iterable<Produto> obterProdutoPorPagina(@PathVariable int numeroPagina){
         Pageable page = PageRequest.of(0, 3);
